@@ -40,7 +40,7 @@ function setup() {
   
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
-  trex.scale = 0.5;
+  trex.scale = 0.6;
   
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
@@ -70,7 +70,7 @@ function setup() {
 
 function draw() {
   //trex.debug = true;
-  background(200);
+  background("lightblue");
   text("Score: "+ score, 500,50);
   
   if (gameState===PLAY){
